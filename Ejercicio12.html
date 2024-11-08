@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Películas Famosas</title>
+</head>
+<body>
+
+    <!-- Línea con las miniaturas -->
+    <div>
+        <a href="#pelicula1"><img src="https://via.placeholder.com/100x150?text=Película+1" alt="Película 1"></a>
+        <a href="#pelicula2"><img src="https://via.placeholder.com/100x150?text=Película+2" alt="Película 2"></a>
+        <a href="#pelicula3"><img src="https://via.placeholder.com/100x150?text=Película+3" alt="Película 3"></a>
+        <a href="#pelicula4"><img src="https://via.placeholder.com/100x150?text=Película+4" alt="Película 4"></a>
+        <a href="#pelicula5"><img src="https://via.placeholder.com/100x150?text=Película+5" alt="Película 5"></a>
+    </div>
+
+    <div>
+        <p><strong>Pulsa en la imagen de la película de la que quieras más información</strong></p>
+    </div>
+
+    <!-- Información de las películas (oculta al principio) -->
+
+    <!-- Película 1 -->
+    <div id="pelicula1" style="display:none;">
+        <h2>Película 1: Inception</h2>
+        <img src="https://via.placeholder.com/400x600?text=Inception" alt="Inception">
+        <p>Director: Christopher Nolan</p>
+        <p>Año: 2010</p>
+        <p>Sinopsis: Un ladrón especializado en el robo de secretos a través del uso de la tecnología para entrar en los sueños de las personas recibe una última oportunidad de redención al intentar implantar una idea en la mente de un objetivo.</p>
+    </div>
+
+    <div id="pelicula2" style="display:none;">
+        <h2>Película 2: The Matrix</h2>
+        <img src="https://via.placeholder.com/400x600?text=The+Matrix" alt="The Matrix">
+        <p>Director: The Wachowskis</p>
+        <p>Año: 1999</p>
+        <p>Sinopsis: Un hacker es reclutado por un grupo de rebeldes para descubrir la verdad sobre la realidad que vive, una realidad que es una simulación creada por las máquinas para someter a la humanidad.</p>
+    </div>
+
+    <div id="pelicula3" style="display:none;">
+        <h2>Película 3: The Shawshank Redemption</h2>
+        <img src="https://via.placeholder.com/400x600?text=Shawshank" alt="Shawshank Redemption">
+        <p>Director: Frank Darabont</p>
+        <p>Año: 1994</p>
+        <p>Sinopsis: Un hombre condenado por un crimen que no cometió encuentra la amistad y la esperanza en la prisión de Shawshank, donde pasa la mayor parte de su vida.</p>
+    </div>
+
+    <div id="pelicula4" style="display:none;">
+        <h2>Película 4: The Godfather</h2>
+        <img src="https://via.placeholder.com/400x600?text=The+Godfather" alt="The Godfather">
+        <p>Director: Francis Ford Coppola</p>
+        <p>Año: 1972</p>
+        <p>Sinopsis: La historia de la familia Corleone y su líder, Vito Corleone, quien intenta asegurarse de que su familia sobreviva en un mundo peligroso lleno de mafia, traición y poder.</p>
+    </div>
+
+    <div id="pelicula5" style="display:none;">
+        <h2>Película 5: Forrest Gump</h2>
+        <img src="https://via.placeholder.com/400x600?text=Forrest+Gump" alt="Forrest Gump">
+        <p>Director: Robert Zemeckis</p>
+        <p>Año: 1994</p>
+        <p>Sinopsis: La vida de Forrest Gump, un hombre con una discapacidad intelectual que accidentalmente se convierte en testigo de varios eventos históricos importantes y tiene un impacto significativo en la sociedad estadounidense.</p>
+    </div>
+
+    <script>
+        document.querySelectorAll('a').forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();  
+                var movieId = this.getAttribute('href');  
+                var movieDiv = document.querySelector(movieId);  
+                movieDiv.style.display = 'block'; 
+            });
+        });
+    </script>
+
+</body>
+</html>
