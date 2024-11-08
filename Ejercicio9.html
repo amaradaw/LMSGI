@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personajes Famosos de la Informática</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        img {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .descripcion {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Personajes Famosos de la Informática</h1>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Alan_Turing_Aged_16.jpg" alt="Alan Turing" onclick="mostrarDescripcion('turing')">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Bill_Gates_2018.jpg" alt="Bill Gates" onclick="mostrarDescripcion('gates')">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Steve_Jobs_Headshot_2010-CROP.jpg" alt="Steve Jobs" onclick="mostrarDescripcion('jobs')">
+
+    <div id="turing" class="descripcion">
+        <h2>Alan Turing</h2>
+        <p>Alan Turing fue un matemático británico, considerado uno de los padres de la computación moderna.</p>
+    </div>
+
+    <div id="gates" class="descripcion">
+        <h2>Bill Gates</h2>
+        <p>Bill Gates es el cofundador de Microsoft, conocido por su trabajo en la revolución de las computadoras personales.</p>
+    </div>
+
+    <div id="jobs" class="descripcion">
+        <h2>Steve Jobs</h2>
+        <p>Steve Jobs fue el cofundador de Apple, famoso por su trabajo en la creación del iPhone y la MacBook.</p>
+    </div>
+
+    <script>
+        function mostrarDescripcion(personaje) {
+            // Ocultar todas las descripciones
+            var descripciones = document.querySelectorAll('.descripcion');
+            descripciones.forEach(function(descripcion) {
+                descripcion.style.display = 'none';
+            });
+
+            // Mostrar la descripción correspondiente
+            var descripcion = document.getElementById(personaje);
+            descripcion.style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
+
