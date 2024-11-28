@@ -1,0 +1,9 @@
+
+div strong, div em {
+    color: red;
+}
+
+
+p strong, p em {
+    color: blue;
+}
