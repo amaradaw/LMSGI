@@ -1,0 +1,10 @@
+p { border:solid 1px black;
+background-color:#DDD;
+color:blue;
+}
+
+p.amarillo {background-color:Yellow;}
+
+p.gris {background-color:gray}
+
+p.grande  {font-size:2em;}

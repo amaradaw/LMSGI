@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personajes Famosos de la Informática</title>
+</head>
+<body>
+
+    <h1>Personajes Famosos del Mundo de la Informática</h1>
+
+    <ul>
+        <li><a href="#personaje1"><img src="https://via.placeholder.com/100?text=Bill+Gates" alt="Bill Gates"></a></li>
+        <li><a href="#personaje2"><img src="https://via.placeholder.com/100?text=Steve+Jobs" alt="Steve Jobs"></a></li>
+        <li><a href="#personaje3"><img src="https://via.placeholder.com/100?text=Mark+Zuckerberg" alt="Mark Zuckerberg"></a></li>
+        <li><a href="#personaje4"><img src="https://via.placeholder.com/100?text=Linus+Torvalds" alt="Linus Torvalds"></a></li>
+        <li><a href="#personaje5"><img src="https://via.placeholder.com/100?text=Ada+Lovelace" alt="Ada Lovelace"></a></li>
+        <li><a href="#personaje6"><img src="https://via.placeholder.com/100?text=Alan+Turing" alt="Alan Turing"></a></li>
+        <li><a href="#personaje7"><img src="https://via.placeholder.com/100?text=Elon+Musk" alt="Elon Musk"></a></li>
+        <li><a href="#personaje8"><img src="https://via.placeholder.com/100?text=Grace+Hopper" alt="Grace Hopper"></a></li>
+        <li><a href="#personaje9"><img src="https://via.placeholder.com/100?text=Tim+Berners-Lee" alt="Tim Berners-Lee"></a></li>
+        <li><a href="#personaje10"><img src="https://via.placeholder.com/100?text=Larry+Page" alt="Larry Page"></a></li>
+        <li><a href="#personaje11"><img src="https://via.placeholder.com/100?text=Sergey+Brin" alt="Sergey Brin"></a></li>
+        <li><a href="#personaje12"><img src="https://via.placeholder.com/100?text=Jeff+Bezos" alt="Jeff Bezos"></a></li>
+        <li><a href="#personaje13"><img src="https://via.placeholder.com/100?text=Sundar+Pichai" alt="Sundar Pichai"></a></li>
+    </ul>
+
+    
+    <div id="personaje1" style="position:absolute; top:400px; display:none;">
+        <h2>Bill Gates</h2>
+        <p>Bill Gates es el cofundador de Microsoft y uno de los hombres más ricos del mundo. Revolucionó la industria del software y la informática personal.</p>
+    </div>
+
+    <div id="personaje2" style="position:absolute; top:450px; display:none;">
+        <h2>Steve Jobs</h2>
+        <p>Steve Jobs fue el cofundador de Apple Inc. y una de las figuras más influyentes en la revolución de los dispositivos tecnológicos.</p>
+    </div>
+
+    <div id="personaje3" style="position:absolute; top:500px; display:none;">
+        <h2>Mark Zuckerberg</h2>
+        <p>Mark Zuckerberg es el fundador de Facebook, la red social más grande del mundo. Ha tenido un impacto significativo en la forma en que nos conectamos.</p>
+    </div>
+
+    <div id="personaje4" style="position:absolute; top:550px; display:none;">
+        <h2>Linus Torvalds</h2>
+        <p>Linus Torvalds es el creador del núcleo Linux, un sistema operativo libre que ha sido fundamental para el desarrollo del software de código abierto.</p>
+    </div>
+
+    <div id="personaje5" style="position:absolute; top:600px; display:none;">
+        <h2>Ada Lovelace</h2>
+        <p>Ada Lovelace fue una matemática y escritora, conocida por ser la primera programadora de la historia al trabajar con Charles Babbage.</p>
+    </div>
+
+    <div id="personaje6" style="position:absolute; top:650px; display:none;">
+        <h2>Alan Turing</h2>
+        <p>Alan Turing fue un matemático y lógico que desarrolló la máquina de Turing, una base teórica para la informática moderna y la inteligencia artificial.</p>
+    </div>
+
+    <div id="personaje7" style="position:absolute; top:700px; display:none;">
+        <h2>Elon Musk</h2>
+        <p>Elon Musk es el fundador de SpaceX y Tesla, y ha sido un innovador en áreas como la automoción eléctrica y los viajes espaciales.</p>
+    </div>
+
+    <div id="personaje8" style="position:absolute; top:750px; display:none;">
+        <h2>Grace Hopper</h2>
+        <p>Grace Hopper fue una pionera en la programación de computadoras, conocida por desarrollar el primer compilador y ser una figura clave en el desarrollo de COBOL.</p>
+    </div>
+
+    <div id="personaje9" style="position:absolute; top:800px; display:none;">
+        <h2>Tim Berners-Lee</h2>
+        <p>Tim Berners-Lee es el creador de la World Wide Web. Su invención ha transformado la forma en que compartimos información en la era digital.</p>
+    </div>
+
+    <div id="personaje10" style="position:absolute; top:850px; display:none;">
+        <h2>Larry Page</h2>
+        <p>Larry Page es el cofundador de Google y uno de los pioneros en la búsqueda de información en Internet y el desarrollo de la publicidad digital.</p>
+    </div>
+
+    <div id="personaje11" style="position:absolute; top:900px; display:none;">
+        <h2>Sergey Brin</h2>
+        <p>Sergey Brin es el cofundador de Google y un experto en informática que ha ayudado a desarrollar productos innovadores como Google Search y Google Maps.</p>
+    </div>
+
+    <div id="personaje12" style="position:absolute; top:950px; display:none;">
+        <h2>Jeff Bezos</h2>
+        <p>Jeff Bezos es el fundador de Amazon, una de las empresas más grandes del mundo en comercio electrónico y servicios en la nube.</p>
+    </div>
+
+    <div id="personaje13" style="position:absolute; top:1000px; display:none;">
+        <h2>Sundar Pichai</h2>
+        <p>Sundar Pichai es el actual CEO de Google y Alphabet, y ha sido clave en el desarrollo de productos como Chrome y Android.</p>
+    </div>
+
+    <script>
+        document.querySelectorAll('a').forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                event.preventDefault(); 
+                var destino = this.getAttribute('href'); 
+                var div = document.querySelector(destino); 
+                div.style.display = 'block'; 
+            });
+        });
+    </script>
+
+</body>
+</html>
+
