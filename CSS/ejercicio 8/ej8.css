@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+p#p1 {
+    border: 5px solid red; 
+    background-color: lightyellow; 
+    margin: 0px; 
+    padding: 0px; 
+}
+
+p#p2 {
+    border: 5px solid green; 
+    background-color: lightgreen; 
+    margin: 5px; 
+    padding: 5px; 
+}
+
+p#p3 {
+    border: 5px solid blue; 
+    background-color: lightblue; 
+    margin: 0px; 
+    padding: 20px; 
+}
