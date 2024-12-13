@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 20px; 
+    background-color: #f9f9f9; 
+}
+
+.capa {
+    padding: 20px;
+    margin: 10px 0; 
+    box-sizing: border-box; 
+}
+
+.capa-1 {
+    width: 50%; 
+    border: 2px solid black;
+    font-size: 1em; 
+}
+
+.capa-2 {
+    width: 33.33%; 
+    border: 2px solid red; 
+    font-size: 1.2em; 
+}
+
+.capa-3 {
+    width: 25%; 
+    border: 2px solid blue; 
+    font-size: 0.8em; 
+}
