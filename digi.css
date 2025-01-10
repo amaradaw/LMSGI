@@ -1,0 +1,49 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para el contenedor del menú */
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Estilo para los enlaces dentro del menú */
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Efecto cuando el usuario pasa el ratón sobre un enlace */
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Estilo para el enlace activo (cuando se está en esa página) */
+nav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Estilo para las secciones */
+.section {
+    padding: 20px;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+    nav a {
+        float: none;
+        width: 100%;
+        text-align: left;
+    }
+}

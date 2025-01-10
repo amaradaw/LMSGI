@@ -1,0 +1,50 @@
+
+#cabecera {
+    height: 100px;
+    background-color: darkorange;
+}
+
+#titulo {
+    border-style: solid;
+  border-color: white;
+  float: left;
+}
+
+#imagen {
+    float :right;
+    overflow: auto;
+    height: 100px;
+    width: 350px;
+   
+}
+
+
+#columna1 {
+    width: 65%;
+    height: 850px;
+    background-color: darkorchid;
+    margin-right: 20px;
+    text-align: left;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+}
+#columna2 {
+    width: 29%;
+    height: 850px;
+    float: right;
+    background-color: cornflowerblue;
+    text-align: left;
+    padding: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#pie {  
+    height: 50px;
+    clear: both;
+    background-color: dimgrey;
+}
